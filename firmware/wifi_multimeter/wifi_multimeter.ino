@@ -381,6 +381,7 @@ void handleApiLatest(){
   String json = "{\"value\":\"" + latest_value + "\",\"unit\":\"" + latest_units + "\",\"functions\":\"" + latest_funcs + "\"}";
 
   server.send(200, "application/json; charset=utf-8", json);
+}
 
 void handleApiDebug(){
 
@@ -395,8 +396,6 @@ void handleApiDebug(){
   json += "}";
 
   server.send(200, "application/json; charset=utf-8", json);
-
-}
 
 }
 
